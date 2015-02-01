@@ -7,7 +7,7 @@
     "author": "Kirill A. Khalitov voronar@gmail.com",
     "license": "MIT",
     "theme": {
-		  "file": "ceratrior.css",
+		  "file": "ceratrior.less",
 		  "dark": true
     }
 }

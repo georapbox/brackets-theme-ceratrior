@@ -1,0 +1,144 @@
+/* COLORS */
+@foreground: #cbcbcb;
+@background: #262626;
+@white: #ffffff;
+@lightBlue: #5cb4de;
+@blue: #729fcf;
+@deepBlue: #284160;
+@orange: #ef7a57;
+@lightOrange: #c17d11;
+@green: #96bf31;
+@yellow: #edd400;
+@pink: #fc3d7f;
+@lightGrey: #888a85;
+@mediumGrey: #313131;
+@selected: #434343;
+
+
+/* SWATCHES */
+.CodeMirror .cm-builtin     { color: @lightBlue; }
+.CodeMirror .cm-def			{ color: @foreground; }
+.CodeMirror .cm-header      { color: @foreground; }
+.CodeMirror .cm-qualifier	{ color: @blue; }
+
+.CodeMirror .cm-atom		{ color: @orange; }
+.CodeMirror .cm-bracket		{ color: @foreground; }
+.CodeMirror .cm-operator	{ color: @foreground; }
+.CodeMirror .cm-meta		{ color: @blue; }
+.CodeMirror .cm-tag			{ color: @blue; }
+
+.CodeMirror .cm-link		{ color: @green; }
+.CodeMirror .cm-number		{ color: @yellow; }
+.CodeMirror .cm-string		{ color: @yellow; }
+.CodeMirror .cm-string-2    { color: @green; }
+.CodeMirror .cm-variable	{ color: @foreground; }
+.CodeMirror .cm-variable-2	{ color: @lightBlue; }
+.CodeMirror .cm-variable-3	{ color: @orange; }
+
+.CodeMirror .cm-attribute	{ color: @green; }
+.CodeMirror .cm-keyword		{ color: @green; }
+.CodeMirror .cm-property	{ color: @foreground; }
+
+.CodeMirror .cm-comment		{ color: @lightGrey; }
+.CodeMirror .cm-error		{ color: @pink; }
+
+
+/* MISC */
+.CodeMirror {
+    line-height: 1.2;
+}
+
+.CodeMirror-scroll {
+    background: @background;
+	color: @foreground;
+}
+
+.CodeMirror-cursor {
+	border-left: 1px solid @white !important;
+}
+
+.CodeMirror-overwrite .CodeMirror-cursor {
+    border-bottom: 1px solid @white !important;
+    border-left: none !important;
+}
+
+.CodeMirror-gutters {
+	background: @background;
+	border-right: 1px solid @mediumGrey;
+}
+
+.CodeMirror-linenumber {
+	color: @lightGrey;
+}
+
+.CodeMirror-selected {
+    background-color: @selected;
+}
+
+
+/* ACTIVE LINE */
+.CodeMirror-focused .CodeMirror-activeline .CodeMirror-nonmatchingbracket {
+	color: @pink !important;
+}
+
+.CodeMirror-activeline-background {
+	background: @mediumGrey !important;
+}
+
+.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
+	color: @white;
+    background-color: @mediumGrey;
+}
+
+
+/* MATCHING */
+.CodeMirror-matchingbracket {
+    color: @orange !important;
+    border-bottom: 1px solid @orange;
+    background: transparent;
+}
+
+.CodeMirror-matchingtag {
+    border-bottom: 1px solid @orange;
+    background: transparent !important;
+}
+
+
+/**
+ * Code Folding (https://github.com/thehogfather/brackets-code-folding)
+ * --------------------------------------------------------------------
+ */
+.CodeMirror-foldgutter,
+.CodeMirror-foldgutter,
+.CodeMirror-foldgutter-blank,
+.CodeMirror-foldgutter-folded,
+.CodeMirror-foldgutter-open {
+    color: #646464;
+}
+
+.CodeMirror-foldmarker {
+    background-color: #333;
+    border-color: #555;
+    color: #555;
+    padding: 0 10px;
+}
+
+
+/**
+ * Bookmarks (https://github.com/JeffryBooher/brackets-bookmarks-extension)
+ * ------------------------------------------------------------------------
+ */
+.bookmark .CodeMirror-linenumber  {
+    color: @white !important;
+    background-color: @deepBlue !important;
+}
+
+/* Non-editor styling */
+#image-holder,
+#not-editor {
+    background-color: @background;
+}
+
+#image-holder {
+    color: @foreground;
+}
